@@ -24,7 +24,7 @@ class Printer:
 
     def typeyear(self,yili,turi):
         for x in self.lists:
-            if turi in self.lists[3] or yili in self.lists[]:
+            if turi in self.lists[3] or yili in self.lists[4]:
                 print("{:20s} {:20s} {:20d} {:20s} {:20d}".format(x[0],x[1],x[2],x[3],x[4]))
 
 Pr = Printer()               
