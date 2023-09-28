@@ -5,7 +5,7 @@ class Printer:
     def __init__(self):
         self.lists = []  
 
-    def input_info(self,model,tezlik,tur,narx = int,yil = int):
+    def input_info(self,model,tezlik,tur=int,narx = int,yil = int):
         self.model = model
         self.tezligi = tezlik
         self.narxi = narx
@@ -24,7 +24,7 @@ class Printer:
 
     def typeyear(self,yili,turi):
         for x in self.lists:
-            if turi in self.lists[3] or yili in self.lists[4]:
+            if turi == self.lists[(self.turi)] and yili == self.lists[self.yil]:
                 print("{:20s} {:20s} {:20d} {:20s} {:20d}".format(x[0],x[1],x[2],x[3],x[4]))
 
 Pr = Printer()               
@@ -40,7 +40,7 @@ while 1:
     Pr.input_info(md,tz,tr,nr,yl)
 
 yr = int(input("Yilni kiriting: "))
-trx = input("Turini kiriting: ")
+trx = int(input("Turini kiriting: "))
 
 Pr.sorting()
 Pr.typeyear(yr,trx)
