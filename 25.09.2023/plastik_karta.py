@@ -37,3 +37,4 @@ if own == card.owner:
 
 if own == card1.owner:
      card1.change()
+
